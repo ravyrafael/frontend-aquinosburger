@@ -9,8 +9,8 @@ export default () => {
     return (
         <Switch>
             <Route path='/' exact component={Dashboard}></Route>
-            <Route path='/clientes' component={Clientes}></Route>
-            <Route path='/funcionarios' component={Funcionarios}></Route>
+            <Route path='/Clientes' component={Clientes}></Route>
+            <Route path='/Funcionarios' component={Funcionarios}></Route>
         </Switch>
     );
 }
