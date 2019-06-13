@@ -1,14 +1,14 @@
-import  React, { Component } from 'react'
+import  React, { Component } from 'react';
 
 class Funcionarios extends Component{
-
-
     render(){
         return(
-            <>
-            <h1> Funcionários</h1>
-            </>
-        
+            <section id="funcionario-body">
+                <h1> Funcionários </h1>
+                <p>
+                    teste
+                </p>        
+            </section>     
         );
     }
 }
