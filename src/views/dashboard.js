@@ -1,16 +1,9 @@
-import { React, Component } from 'react'
+import React, { Component } from 'react';
 
-class Dashboard extends Component{
+// import { Container } from './styles';
 
-
-    render(){
-        return(
-            <>
-            <h1> Main Template</h1>
-            </>
-        
-        );
-    }
+export default class Dashboard extends Component {
+  render() {
+    return (<h1 >Dashboard</h1>);
+  }
 }
-
-export default Dashboard;
