@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/template.css';
+import './content/template/dependencies';
 import App from './main/App';
 
 
