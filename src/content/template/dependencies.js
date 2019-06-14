@@ -1,2 +1,2 @@
-//import 'font-awesome'
+//import '@fortawesome/fontawesome-free/css/all.min.css';
 import './template.css'
