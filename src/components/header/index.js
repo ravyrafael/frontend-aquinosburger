@@ -4,16 +4,21 @@ import {
 } from 'react-bootstrap';
 import './header.css';
 import { FaHamburger } from 'react-icons/fa';
+import {navigator} from '../../Utils/routeUtils.js'
+
+
 
 export default function Header() {
+  console.log(navigator)
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home"><FaHamburger /></Navbar.Brand>
+        <Navbar.Brand href="Home"><FaHamburger /></Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="">Home</Nav.Link>
-          <Nav.Link href="Clientes">Clientes</Nav.Link>
-          <Nav.Link href="Funcionarios">Funcionarios</Nav.Link>
+          {navigator.map(item=>{
+            console.log(item);
+            return (<Nav.Link key={item.link} href={item.link}>{item.icone()}{item.nome}</Nav.Link>)
+          })}
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
