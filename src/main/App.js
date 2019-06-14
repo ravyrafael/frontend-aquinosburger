@@ -6,7 +6,7 @@ import Header from '../components/header';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter forceRefresh='false' >
     
     <Header/>
       <Routes />

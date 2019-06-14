@@ -1,20 +1,21 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Dashboard from './views/Dashboard';
-import Funcionarios from './views/Funcionarios';
-import Clientes from './views/Clientes';
-import Error404 from './views/Error404';
+import { Switch, Route, Redirect } from 'react-router';
 
+import Error404 from './views/Error404';
+import {routes} from './Utils/routeUtils.js'
 
 export default () => {
     return (
         <Switch>
-            <Route path='/Dashboard' exact component={Dashboard}></Route>
-            <Route path='/Clientes' exact component={Clientes}></Route>
-            <Route path='/Funcionarios' exact component={Funcionarios}></Route>
+            {routes.map(route=>
+                <Route key={route.name} path={route.path} exact component={route.component}></Route>
+            )}
+            
+
             
             <Route path='/Erro404' exact component={Error404}></Route>
-            <Redirect path='/home' to='/Dashboard'/>
+            <Redirect path='/home' to='/'/>
+            <Redirect path='/Dashboard' to='/'/>
             <Redirect path='*' to='/Erro404'/>
         </Switch>
     );
