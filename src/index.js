@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import App from './App';
+import './content/template/dependencies';
+import App from './main/App';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
