@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {Navbar, Nav, Form,FormControl,Button } from 'react-bootstrap'
 import './header.css';
-
+import { FaHamburger} from 'react-icons/fa'
 
 // import { Container } from './styles';
 
@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Aquinos</Navbar.Brand>
+                <Navbar.Brand href="#home"><FaHamburger/></Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="">Home</Nav.Link>
                     <Nav.Link href="Clientes">Clientes</Nav.Link>
