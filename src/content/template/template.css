@@ -11,3 +11,6 @@ body{
     font: 14px Arial, Helvetica, sans-serif;
     -webkit-font-smothing: antialiased !important; 
 }
+.app-content{
+    padding-left: 3rem;
+}
