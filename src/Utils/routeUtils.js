@@ -16,12 +16,12 @@ import Clientes from '../views/Clientes';
         path: "/Clientes",
     name: "Clientes",
     icone: FaUser,
-    component: Funcionarios
+    component: Clientes
     },
     {
         path: "/Funcionarios",
     name: "Funcionarios",
     icone: FaUser,
-    component:Clientes
+    component:Funcionarios
     }
 ]

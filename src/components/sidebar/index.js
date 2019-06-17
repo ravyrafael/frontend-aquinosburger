@@ -7,7 +7,7 @@ class SideBar extends Component {
         return (
             <>
                 <div>
-                    <div className={`sidebar fixed sn-bg-1`}>
+                    <div className='sidebar fixed sn-bg-1'>
                         <ul>
                             <SidebarCategory></SidebarCategory>
                         </ul>
