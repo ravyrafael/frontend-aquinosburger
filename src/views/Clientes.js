@@ -8,7 +8,7 @@ class Clientes extends Component {
     return (
     <div>
     <h1 >Clientes</h1>
-    {this.props.clientes.map(cliente => (<h2>{cliente.name} - {cliente.email}</h2>))}
+    {this.props.clientes.map(cliente => (<h2 key={cliente.name}>{cliente.name} - {cliente.email}</h2>))}
       </div>
       );
   }
