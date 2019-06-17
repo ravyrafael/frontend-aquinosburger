@@ -1,34 +1,18 @@
-header#main-header{
-    background:#fff;
-    height: 72px;
-    border-bottom: 1px solid #DDD;
+#header {
+  position: sticky;
+  top: 0px;
+}
+#header .btn-search {
+  color: #9e0000;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-left: 0px;
+}
+#header .btn-search:hover {
+  color: #9e000090;
+}
+#header .btn-search:focus {
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0);
 }
 
-header#main-header .main-content{
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto;
-    height: 72px;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header#main-header .main-content h1{
-    font-weight: 100;
-    font-size: 25px;    
-}
-header#main-header .main-content h1 a{
-    font-weight: 100;
-    font-size: 20px;
-    text-decoration: none;
-    color:#444;
-    text-transform: uppercase;    
-}
-
-header#main-header .main-content h1 img{
-    width:7%;
-    position: relative;
-    float:left;
-}
+/*# sourceMappingURL=header.css.map */

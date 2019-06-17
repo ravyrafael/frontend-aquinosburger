@@ -1,26 +1,28 @@
 import React from 'react';
 import {
-  Navbar, Nav, Form, FormControl, Button,
+  Navbar, Nav, Form, FormControl, Button, InputGroup
 } from 'react-bootstrap';
 import './header.css';
-import { FaHamburger } from 'react-icons/fa';
-import { routes } from '../../Utils/routeUtils.js'
-
-
+import { FaHamburger, FaSearch } from 'react-icons/fa';
 
 export default function Header() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" id="header">
         <Navbar.Brand href="Home"><FaHamburger /></Navbar.Brand>
         <Nav className="mr-auto">
-          {routes.map(item=>{
-            return (<Nav.Link key={item.name} href={item.path}>{item.icone()}{item.name}</Nav.Link>)
-          })}
         </Nav>
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
+          <InputGroup>
+            <FormControl
+              placeholder="Pesquisa"
+              aria-label="Pesquisa"
+              aria-describedby="basic-addon2"
+            />
+            <InputGroup.Append>
+            <Button variant="secondary" className="btn-search"><FaSearch /></Button>
+            </InputGroup.Append>
+          </InputGroup>
         </Form>
       </Navbar>
     </>
