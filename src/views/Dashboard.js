@@ -27,6 +27,15 @@ export default class Dashboard extends Component {
       Dashboard<br/>
       Dashboard<br/>
       Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
+      Dashboard<br/>
       </h1>);
   }
 }
