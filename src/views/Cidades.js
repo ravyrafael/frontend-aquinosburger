@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Table } from 'react-bootstrap'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Creators } from '../stores/ducks/cidades'
@@ -12,7 +13,19 @@ class Cidades extends Component {
     return (
       <div>
         <h1 >Cidades </h1>
-        { cidades.map(cidade=>(<div key={cidade.id}>{cidade.nome}</div>))}
+        <Table>
+          <thead>
+            <th>ID</th>
+            <th>Nome</th>
+          </thead>
+          <tbody>
+            {cidades.map(cidade => (
+            <tr key={cidade.id}>
+            <td>{cidade.id}</td>
+              <td>{cidade.nome}</td>
+              </tr>))}
+          </tbody>
+        </Table>
       </div>
     );
   }
