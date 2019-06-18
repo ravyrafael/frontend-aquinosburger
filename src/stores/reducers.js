@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
 
-import clientesReducer from './clientesReducer.js'
+import cidades from './ducks/cidades.js'
 
 const rootReducer = combineReducers({
     dashboard: ()=> ({}),
-    clientes: clientesReducer
+    cidades
 })
 
 export default rootReducer;

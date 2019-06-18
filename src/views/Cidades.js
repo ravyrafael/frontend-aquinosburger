@@ -3,21 +3,21 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Creators } from '../stores/ducks/cidades'
 
-class Clientes extends Component {
+class Cidades extends Component {
   componentWillMount() {
-    console.log('this.props.ListClientes()');
+    this.props.ListCidades()
   }
-
   render() {
-
+    const { cidades } = this.props.cidades
     return (
       <div>
-        <h1 >Clientes</h1>
+        <h1 >Cidades </h1>
+        { cidades.map(cidade=>(<div key={cidade.id}>{cidade.nome}</div>))}
       </div>
     );
   }
 }
 
-const mapStateToProps = state => ({ clientes: state.clientes })
+const mapStateToProps = state => ({ cidades: state.cidades })
 const mapDispatchToProps = dispatch => bindActionCreators(Creators, dispatch)
-export default connect(mapStateToProps, mapDispatchToProps)(Clientes);
+export default connect(mapStateToProps, mapDispatchToProps)(Cidades);
