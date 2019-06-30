@@ -1,0 +1,70 @@
+// #order-list {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+// }
+
+.order-list {
+    background: none;
+    border: none;
+
+    .card {
+        cursor: pointer;
+    }
+
+    .card-header {
+        background: none;
+        border-bottom: 3px solid red;
+        padding: .60rem 1.1rem;
+
+        [class*="col"] {
+            padding: 0 5px;
+        }
+    }
+
+    &-header {
+        &-image {
+            max-width: 25px;
+            max-height: 25px;
+        }
+
+        &-content {
+
+            :first-child {
+                margin-bottom: -16px;
+            }
+        }
+
+        &-title {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.04rem;
+        }
+    }
+
+    .card-body {
+        border: 1px solid rgba(0, 0, 0, .125);
+
+    }
+
+    >div:not(.card-header) {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .card-footer {
+        background: none;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-top: none;
+        border-radius: 0;
+
+
+        &-buttons {
+
+            margin: -.75rem -1.25rem;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

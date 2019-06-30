@@ -1,16 +1,2 @@
-* {
-    margin:0;
-    padding:0;
-    outline:0;
-    box-sizing:border-box;
-
-}
-
-body{
-    background: #fafafa;
-    font: 14px Arial, Helvetica, sans-serif;
-    -webkit-font-smothing: antialiased !important; 
-}
-.app-content{
-    padding-left: 3rem;
-}
+*{margin:0;padding:0;outline:0;-webkit-box-sizing:border-box;box-sizing:border-box}body{background:#fafafa;font:14px Arial, Helvetica, sans-serif;-webkit-font-smothing:antialiased !important}.app-content{margin-left:3rem;padding:1rem}.pillar{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100%}.pillar .flo-1{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.pillar .flo-2{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2}
+/*# sourceMappingURL=template.css.map */
