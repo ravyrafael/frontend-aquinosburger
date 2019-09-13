@@ -19,7 +19,7 @@ class SidebarCategory extends Component {
                                 <Row className="nowrap">
                                     <Col xs="auto"><div className="sidebar-category-icon">{item.icone()}</div></Col>
                                     <Col className="sidebar-category-text">
-                                        <Row className="nowrap"><Col>{item.name}</Col>
+                                        <Row><Col  className="nowrap">{item.name}</Col>
                                         </Row>
                                     </Col>
                                 </Row>

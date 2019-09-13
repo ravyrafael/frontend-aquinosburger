@@ -21,6 +21,11 @@ $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
     &-category {
         &-text {
             overflow: hidden;
+            .nowrap {
+                flex-wrap: nowrap;
+                overflow: hidden;
+                white-space: nowrap;
+              }
         }
 
         &-icon {
