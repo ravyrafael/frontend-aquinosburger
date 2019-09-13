@@ -10,7 +10,7 @@ function App() {
       <Header />
       <SideBar />
       <div className="app-content">
-      <Routes  />
+        <Routes />
       </div>
     </BrowserRouter >
 

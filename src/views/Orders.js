@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import OrderList from '../components/orderList';
 
-class Cidades extends Component {
+class Orders extends Component {
   render() {
     return (
       <Row>
@@ -14,4 +14,4 @@ class Cidades extends Component {
   }
 }
 
-export default Cidades;
+export default Orders;

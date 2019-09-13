@@ -36,5 +36,11 @@ export const routes =
             name: "Pedidos",
             icone: FaReceipt,
             component: Orders
+        },
+        {
+            path: "/products/ProductsList",
+            name: "Lista De Produtos",
+            icone: FaReceipt,
+            component: Orders
         }
     ]
