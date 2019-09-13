@@ -8,7 +8,7 @@ class Funcionarios extends Component{
                 <p>
                     teste
                 </p>        
-            </section>     
+            </section> 
         );
     }
 }
